@@ -2,6 +2,7 @@ package x2
 
 import std.io.*
 import std.collection.*
+import std.convert.*
 
 func string_to_int64(s: String) : Int64 {
     var result: Int64 = 0
@@ -14,7 +15,7 @@ func string_to_int64(s: String) : Int64 {
             // 非数字字符，处理错误（这里简单返回0）
             result = result * 10 + dv
         }
-
+    
     }
     
     return result
